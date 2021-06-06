@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<title>shuzhencang</title>	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="css/style_3-3.css" rel="stylesheet">
+	<link href="css/hizoom.min.css" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(book.jpg);
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+	</style>
+</head>
+<body>
+<!-- 導航列 -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<a class="navname" href="index.html">書珍倉</a>
+		<div><input type="text" name="key" class="form-control" placeholder="Search" style="height: 35px;">
+		</div>
+		<a href="#">
+			<div class="icon">
+			<img src="img/1.png" width="30" height="30">
+        	</div>
+        </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  	    <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         	<ul class="navbar-nav ml-auto">
+         		<li class="nav-item"><a class="nav-link" href="index_1-1.html">二手書籍</a></li>
+         		<li class="nav-item"><a class="nav-link" href="#">公益活動</a></li>
+      			<li class="nav-item"><a class="nav-link" href="index_3.html">會員專區</a></li>
+      			<li class="nav-item"><a class="nav-link" href="index4_1.html">關於我們</a></li>
+    		</ul>
+        </div>
+	</nav>
+
+<!-- 內容 -->
+	<div class="container">
+		<div class="title">
+			<div class="row">
+				<div class="textleft col">
+					<div class="row">
+						<a href="#"><div class="title2">回上一頁</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 書籍陳列內容 -->
+		<div class="content">
+			<div class="bookcontent col">
+				<div class="row1">
+					<div class="book11 col-md-4">
+						<div class="content11" id="book">
+							<img src="img/book.jpg" height="300px" width="500px">
+							<div class="booktext11">初級客語<br>AnnLee</div>
+						</div>
+					</div>
+					<div class="book12 col-md-4">
+						<div class="content12">					
+							<div class="comment1">書況還行<br>2021/5/20</div>
+							<div class="booktext12">
+								<div class="ratings">
+   									 <div class="empty-stars"></div>
+    									<div class="full-stars" style="width:70%"></div>
+									</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+
+				<div class="row2">
+					<div class="book21 col-md-4">
+						<div class="content21" id="book">	
+								<img src="img/book.jpg" height="300px" width="500px">				
+							<div class="booktext21">初級客語<br>AnnLee</div>
+						</div>	
+					</div>
+					<div class="book22 col-md-4">
+						<div class="content22">					
+						<div class="comment2">書況還行<br>2021/5/20</div>
+						<div class="booktext22">
+							<div class="ratings">
+   								 <div class="empty-stars"></div>
+    								<div class="full-stars" style="width:70%"></div>
+								</div>
+						</div>
+						</div>	
+					</div>
+				</div>
+
+
+				<div class="row3">
+					<div class="book31 col-md-4">
+						<div class="content31" id="book">
+							<img src="img/book.jpg" height="300px" width="500px">
+							<div class="booktext31">初級客語<br>AnnLee</div>
+						</div>
+					</div>
+						<div class="book32 col-md-4">
+							<div class="content32">
+								<div class="comment3">書況還行<br>2021/5/20</div>
+								<div class="booktext32">
+									<div class="ratings">
+    									<div class="empty-stars"></div>
+   											 <div class="full-stars" style="width:70%"></div>
+										</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- footer -->
+
+	<div class="footer">©shuzhencang 2021／No.1001, Daxue Rd., East Dist., Hsinchu City, Taiwan (R.O.C.)<div>
+
+	<!-- JS連結 -->
+	<script src="js/jQuery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script> 
+	<script src='js/jquery.min.js'></script>
+	<script src="jquery.zoom.js"></script>
+</body>
+</html>
+
+
+
